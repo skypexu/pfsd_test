@@ -3,7 +3,7 @@
 
 1. 先以root启动pfsdaemon:
 
-/usr/local/polarstore/pfsd/bin/start_pfsd.sh pool@@pfstest
+/usr/local/polarstore/pfsd/bin/start_pfsd.sh -p pool@@pfstest
 
 以上'@@'字符串是因为pfs不允许盘名包含'/'字符，所以将它变换为@，内部再转成'/'传递给curve.
 
