@@ -52,8 +52,6 @@ int main(int argc, char **argv)
 	if (ret != 12) {
 		printf("pfsd_read failed %d\n", ret);
 		return 1;
-	} else {
-		printf("data is consistent\n");
 	}
 
 	if (strncmp(buf, "hello world\n", 12)) {
