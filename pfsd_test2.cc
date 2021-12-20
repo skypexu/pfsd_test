@@ -85,7 +85,7 @@ int main(int argc, char **argv)
 	pfsd_set_mode(PFSD_SDK_THREADS);
 
 //	pfsd_set_svr_addr(svraddr, len);
-	int ret = pfsd_mount("curve", pbd, hostid, mode);
+	int ret = pfsd_mount(cluster, pbd, hostid, mode);
 	if (ret) {
 		printf("pfsd_mount failed\n");
 		return 1;
